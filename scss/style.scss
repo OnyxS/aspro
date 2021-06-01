@@ -95,7 +95,7 @@ a {
           justify-content: flex-start;
           align-items: center;
 
-          .mobile_burger {
+          .ham {
             display: none;
             margin-right: 20px;
 
@@ -230,7 +230,7 @@ a {
       @media only screen and (max-width: 768px) {
         .top_header {
           .left-block {
-            .mobile_burger {
+            .ham {
               display: block;
             }
 
