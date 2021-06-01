@@ -64,6 +64,7 @@ a {
 .button {
   display: inline-block;
   padding: 16px 26px;
+  @include adaptiv-font(11, 11, 1.2);
   color: white;
   background-color: #365edc;
   text-transform: uppercase;
@@ -97,23 +98,28 @@ a {
         max-width: 200px;
         color: white;
         opacity: 0.6;
-        @include adaptiv-font(13, 9, 20);
+        @include adaptiv-font(13, 13, 1.2);
       }
     }
     &-contacts {
       display: flex;
+      align-items: center;
       &-city {
+        font-weight: 400;
         color: white;
-        @include adaptiv-font(13, 9, 20);
+        @include adaptiv-font(13, 13, 1.2);
         padding-right: 25px;
       }
       &-tel {
         color: white;
-        @include adaptiv-font(16, 9, 20);
+        font-weight: 700;
+        @include adaptiv-font(16, 16, 1.2);
       }
       &-text {
+        font-weight: 400;
+        margin-left: 20px;
         color: white;
-        @include adaptiv-font(9, 9, 20);
+        @include adaptiv-font(15, 15, 1.2);
       }
     }
     &-search {
@@ -132,19 +138,19 @@ a {
       &-search {
         display: flex;
 
-        @include adaptiv-font(10, 9, 20);
+        @include adaptiv-font(10, 10, 1.2);
       }
       &-enter {
         display: flex;
         padding-left: 15px;
-        @include adaptiv-font(10, 9, 20);
+        @include adaptiv-font(10, 9, 1.2);
       }
     }
   }
   .nav {
     width: 100%;
     background-color: #365edc;
-    @include adaptiv-font(13, 9, 1.2);
+    @include adaptiv-font(13, 13, 1.2);
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
@@ -178,8 +184,10 @@ a {
         }
         .header__slide-type {
           margin-bottom: 16px;
+          @include adaptiv-font(11, 11, 1.2);
         }
         .header__slide-title {
+          @include adaptiv-font(34, 18, 1.2);
           color: white;
         }
 
@@ -187,9 +195,11 @@ a {
           max-height: 189px;
           color: white;
           margin-top: 23px;
+          @include adaptiv-font(15, 13, 1.2);
         }
         .header__slide-btn {
           margin-top: 29px;
+          @include adaptiv-font(11, 11, 1.2);
         }
       }
     }
@@ -255,6 +265,12 @@ a {
       .about__footer-element {
         text-align: center;
         padding-bottom: 32px;
+        &-title {
+          @include adaptiv-font(16, 16, 1.2);
+        }
+        &-text {
+          @include adaptiv-font(13, 13, 1.2);
+        }
         &-img {
           width: 40px;
           height: 40px;
@@ -281,6 +297,9 @@ a {
       &-img {
         margin: 0 auto 16px;
       }
+      &-text {
+        @include adaptiv-font(14, 14, 1.2);
+      }
     }
   }
 }
@@ -303,6 +322,12 @@ a {
       background-position: center center;
       color: white;
     }
+    .best__left-name {
+      @include adaptiv-font(14, 14, 1.2);
+    }
+    .best__left-top-art {
+      @include adaptiv-font(12, 12, 1.2);
+    }
     &-element {
       padding: 25px 25px 29px;
       text-align: center;
@@ -312,6 +337,16 @@ a {
       &-img {
         margin: 0 auto 20px;
         width: 100%;
+      }
+      .best__count {
+        @include adaptiv-font(12, 12, 1.2);
+      }
+      &-name {
+        @include adaptiv-font(14, 13, 1.2);
+      }
+      .price {
+        font-weight: 700;
+        @include adaptiv-font(17, 14, 1.2);
       }
     }
   }
@@ -324,9 +359,17 @@ a {
     &-right {
       .top__data {
         display: flex;
+        @include adaptiv-font(12, 12, 1.2);
+      }
+      .top__price {
+        @include adaptiv-font(18, 18, 1.2);
       }
       .top__sale {
+        @include adaptiv-font(11, 10, 1.2);
         display: flex;
+      }
+      .top__name {
+        @include adaptiv-font(20, 18, 1.2);
       }
     }
   }
@@ -348,9 +391,11 @@ a {
       }
       &-SubType {
         margin: 25px 0 6px;
+        @include adaptiv-font(18, 18, 1.2);
       }
       &-type {
         margin-bottom: 20px;
+        @include adaptiv-font(13, 13, 1.2);
       }
       .top__img1 {
         background: url(../img/top__row1.jpg) no-repeat;
@@ -396,6 +441,16 @@ a {
 
       &-content {
         width: 50%;
+        .sale__element-timing {
+          @include adaptiv-font(13, 12, 1.2);
+        }
+        .sale__element-name {
+          @include adaptiv-font(18, 14, 1.2);
+        }
+        .sale__element-text {
+          @include adaptiv-font(13, 13, 1.2);
+          margin: 10px 0 20px;
+        }
       }
 
       .sale__element-img {
@@ -438,6 +493,10 @@ a {
       background: #ececec;
       text-align: center;
       width: 18%;
+      &-text {
+        @include adaptiv-font(15, 14, 1.2);
+        margin-top: 10px;
+      }
       &-img {
         margin: 0 auto;
         width: 150px;
@@ -490,10 +549,16 @@ a {
         width: 50%;
         padding-bottom: 3.266rem;
         padding-right: 3.266rem;
-
+        @include adaptiv-font(13, 13, 1.2);
         padding-left: 3.266rem;
+        &-type {
+          @include adaptiv-font(10, 10, 1.2);
+        }
+        &-look {
+          @include adaptiv-font(20, 20, 1.2);
+        }
         &-text {
-          @include adaptiv-font(15, 9, 1.2);
+          @include adaptiv-font(15, 15, 1.2);
         }
       }
     }
@@ -503,6 +568,12 @@ a {
         border: 1px solid #ececec;
         display: flex;
         padding: 13px 19px;
+        .look__katalog-content {
+          @include adaptiv-font(13, 13, 1.2);
+          &-price {
+            @include adaptiv-font(15, 15, 1.2);
+          }
+        }
         .katalog__img {
           width: 80px;
         }
@@ -520,6 +591,7 @@ a {
     border-color: #fafafa;
     border-top-color: #ececec;
     font-weight: 400;
+    @include adaptiv-font(11, 11, 1.2);
     border: 1px solid;
     letter-spacing: 0.8px;
     &:hover {
@@ -548,6 +620,12 @@ a {
             height: 70px;
             border-radius: 50%;
           }
+          &-text {
+            @include adaptiv-font(15, 10, 1.2);
+            .comment__slide-left-name {
+              @include adaptiv-font(20, 18, 1.2);
+            }
+          }
         }
         .comment__slide-stars {
           display: flex;
@@ -556,6 +634,9 @@ a {
             height: auto;
           }
         }
+      }
+      &-text {
+        @include adaptiv-font(15, 15, 1.2);
       }
     }
   }
@@ -570,6 +651,15 @@ a {
       width: 48%;
       &-content {
         padding: 42px 10px 68px 44px;
+        .comment__item-type {
+          @include adaptiv-font(10, 10, 1.2);
+        }
+        .comment__item-name {
+          @include adaptiv-font(24, 18, 1.2);
+        }
+        .comment__item-text {
+          @include adaptiv-font(13, 13, 1.2);
+        }
       }
       &-img {
         width: 50%;
@@ -598,13 +688,24 @@ a {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-
+        text-align: left;
         position: absolute;
         right: 0;
         bottom: 0;
         width: 100%;
         height: 54.5%;
         background: white;
+        padding: 23px 24px;
+        &-type {
+          @include adaptiv-font(10, 10, 1.2);
+          margin-bottom: 11px;
+        }
+        &-name {
+          @include adaptiv-font(14, 14, 1.2);
+        }
+        &-date {
+          @include adaptiv-font(13, 12, 1.2);
+        }
       }
     }
     .first {
@@ -636,11 +737,16 @@ a {
     .company__text {
       padding: 32px 70px 32px 30px;
       width: 50%;
+      &-type {
+        @include adaptiv-font(10, 10, 1.2);
+      }
       &-title {
         margin: 20px 0 30px;
+        @include adaptiv-font(24, 24, 1.2);
       }
       &-text {
         margin-bottom: 25px;
+        @include adaptiv-font(15, 15, 1.2);
       }
     }
     .company__video {
@@ -713,11 +819,16 @@ a {
       border-radius: 3px;
       display: flex;
       padding: 14px;
+      .ranee__price {
+        font-size: 14px;
+        font-weight: 700;
+      }
     }
   }
 }
 
 .footer {
+  font-size: 13px;
   padding: 59px 0 64px;
   background: #333;
   &__header {
@@ -737,6 +848,7 @@ a {
       flex-direction: column;
       .footer__href {
         color: #999;
+        margin-bottom: 8px;
       }
     }
     .contacts {
@@ -747,9 +859,12 @@ a {
     }
     .footer-header {
       font-weight: 700;
+      margin-bottom: 20px;
     }
     &-contacts {
+      @include adaptiv-font(15, 15, 1.2);
       &-btn {
+        @include adaptiv-font(11, 11, 1.2);
         width: 100%;
         color: white;
         background: #494949;
@@ -763,6 +878,7 @@ a {
       }
       .contacts__tel {
         margin: 0 0 14px;
+        @include adaptiv-font(16, 16, 1.2);
         a {
           color: white;
         }
@@ -796,15 +912,24 @@ a {
 
 .section__header {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding-top: 68px;
   margin-bottom: 33px;
+  .section__title {
+    @include adaptiv-font(24, 24, 1.2);
+  }
   .section__links {
     display: flex;
+    align-items: center;
+    &-katalog {
+      @include adaptiv-font(10, 10, 1.2);
+    }
     &-filtr {
       display: flex;
       li {
+        @include adaptiv-font(13, 13, 1.2);
         display: block;
         margin: 0 13px;
       }
@@ -820,4 +945,5 @@ a {
   color: #365edc;
   margin: 33px 0 61px;
   border: 1px solid rgba(54, 94, 220, 0.35);
+  @include adaptiv-font(10, 10, 1.2);
 }
