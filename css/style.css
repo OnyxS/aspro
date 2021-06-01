@@ -1,7 +1,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-weight: 300;
   scroll-behavior: smooth;
@@ -109,7 +109,7 @@ a {
 .header__header-logo-text {
   max-width: 200px;
   color: white;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media (max-width: 767px) {
@@ -376,11 +376,11 @@ a {
 
 .about__header-element .header__element-type {
   text-transform: uppercase;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   color: white;
   font-weight: 700;
   margin: 0 0 11px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 @media (max-width: 767px) {
@@ -649,7 +649,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 20px;
-  gap: 20px;
 }
 
 .collection__elements .collection__element {
@@ -658,7 +657,7 @@ a {
   padding: 40px 30px 29px;
   background: #ececec;
   text-align: center;
-  width: 20%;
+  width: 18%;
 }
 
 .collection__elements .collection__element-img {
@@ -768,7 +767,7 @@ a {
   border-top-color: #ececec;
   font-weight: 400;
   border: 1px solid;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .look__btn:hover {
