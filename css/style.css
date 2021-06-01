@@ -57,6 +57,12 @@ a {
   padding: 0 30px;
 }
 
+@media (max-width: 576px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
 .button {
   display: inline-block;
   padding: 16px 26px;
