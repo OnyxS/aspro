@@ -44,6 +44,17 @@
           color: #9999;
           margin: 0 16px;
           padding: 0 33px 0 15px;
+          option {
+            background: white;
+            font-size: 15px;
+            padding: 4px 9px;
+            text-align: left;
+            color: #777777;
+            &:hover {
+              color: white;
+              background: #365edc;
+            }
+          }
         }
         @media (max-width: 991px) {
           flex-direction: column;
@@ -137,11 +148,6 @@
           margin: 0 0 0 40px;
           font-size: 10px;
           .list__item-adres {
-            svg {
-              margin-right: 10px;
-              max-width: 11px;
-              fill: #365edc;
-            }
             .list__item-place {
               font-size: 17px;
             }
@@ -156,10 +162,17 @@
                 a {
                   color: #365edc;
                 }
+                svg {
+                  margin-right: 10px;
+                  max-width: 11px;
+                  fill: #365edc;
+                }
               }
               .metro {
                 display: flex;
                 svg {
+                  margin-right: 10px;
+                  max-width: 11px;
                   fill: red;
                 }
               }
