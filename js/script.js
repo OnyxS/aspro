@@ -34,6 +34,7 @@ function toggleMenu() {
     xIcon.style.display = "none";
     menuIcon.style.display = "block";
     body.style.overflow="auto";
+	 
   } else {
     menu.classList.add("show-menu");
     xIcon.style.display = "block";
@@ -54,3 +55,12 @@ else{
   )
 }
 
+document.addEventListener('mouseover', function (e) {
+	if (e.target.classList.contains('sub_menu-link')) {
+		 let rightAttribute = e.target.getAttribute('right');
+
+		 let rightBlockChildren = document.querySelector('.sub_menu .right-block').children;
+
+		 [].slice.call(rightBlockChildren).forEach(item => (item.classList.contains(rightAttribute)) ? item.setAttribute('style', 'display: flex;'): item.setAttribute('style', 'display: none;'));
+	}
+});
