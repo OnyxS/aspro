@@ -1,3 +1,5 @@
+@import "katalog";
+
 $maxWidth: 1440;
 
 @mixin adaptiv-font($pcSize, $mobSize, $line) {
