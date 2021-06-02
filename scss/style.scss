@@ -1,5 +1,6 @@
 @import "katalog";
 @import "contacts";
+@import "aboutCompany";
 
 $maxWidth: 1440;
 
@@ -1751,8 +1752,6 @@ a {
   &:hover{
     box-shadow: 0 0 40px 40px #365edc inset;
     color: #fff;
-  
-
   }
 }
 

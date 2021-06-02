@@ -59,8 +59,8 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .content .catalog_sections .sections__wrapper .section_item a .img {
@@ -168,7 +168,7 @@
 .content .catalog_element .catalog_element_main .left-block .image_block .preview_images .img {
   width: 20%;
   position: relative;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .content .catalog_element .catalog_element_main .left-block .image_block .preview_images .img img {
@@ -539,7 +539,8 @@
       flex-wrap: wrap;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item, .content .catalog_section .section__wrapper .right-block .filters .accept {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item,
+.content .catalog_section .section__wrapper .right-block .filters .accept {
   position: relative;
   font-size: 16px;
   font-weight: 500;
@@ -548,12 +549,13 @@
   border: 1px solid #ececec;
   background-color: white;
   color: black;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   z-index: 100;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show, .content .catalog_section .section__wrapper .right-block .filters .accept .filter-show {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show,
+.content .catalog_section .section__wrapper .right-block .filters .accept .filter-show {
   display: none;
   position: absolute;
   z-index: 200;
@@ -566,14 +568,16 @@
   padding: 15px;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .title, .content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .title {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .title,
+.content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .title {
   padding-left: 10px;
   font-size: 14px;
   font-weight: 300;
   color: #cecece;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs, .content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs,
+.content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -586,17 +590,20 @@
           align-items: center;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs input, .content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs input {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs input,
+.content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs input {
   margin: 5px;
   width: 40%;
   border: 1px solid #cecece;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs input:focus-visible, .content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs input:focus-visible {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item .filter-show .form-inputs input:focus-visible,
+.content .catalog_section .section__wrapper .right-block .filters .accept .filter-show .form-inputs input:focus-visible {
   outline: none;
 }
 
-.content .catalog_section .section__wrapper .right-block .filters .filter-item:hover, .content .catalog_section .section__wrapper .right-block .filters .accept:hover {
+.content .catalog_section .section__wrapper .right-block .filters .filter-item:hover,
+.content .catalog_section .section__wrapper .right-block .filters .accept:hover {
   border-color: #365edc !important;
 }
 
@@ -640,8 +647,8 @@
   border: 1px solid #ececec;
   height: 300px;
   position: relative;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .content .catalog_section .section__wrapper .right-block .catalog_elements_list .catalog_element-item .img {
