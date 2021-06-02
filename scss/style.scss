@@ -1,4 +1,5 @@
 @import "katalog";
+@import "contacts";
 
 $maxWidth: 1440;
 
@@ -1746,6 +1747,13 @@ a {
   margin: 33px 0 61px;
   border: 1px solid rgba(54, 94, 220, 0.35);
   @include adaptiv-font(10, 10, 1.2);
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover{
+    box-shadow: 0 0 40px 40px #365edc inset;
+    color: #fff;
+  
+
+  }
 }
 
 .ham {
