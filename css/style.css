@@ -943,7 +943,16 @@
 }
 
 .contacts__content .map__header-selects select option {
-  background: red;
+  background: white;
+  font-size: 15px;
+  padding: 4px 9px;
+  text-align: left;
+  color: #777777;
+}
+
+.contacts__content .map__header-selects select option:hover {
+  color: white;
+  background: #365edc;
 }
 
 @media (max-width: 991px) {
@@ -1080,12 +1089,6 @@
   font-size: 10px;
 }
 
-.contacts__content .list__rayon .list__item-content .list__item-adres svg {
-  margin-right: 10px;
-  max-width: 11px;
-  fill: #365edc;
-}
-
 .contacts__content .list__rayon .list__item-content .list__item-adres .list__item-place {
   font-size: 17px;
 }
@@ -1111,13 +1114,21 @@
   color: #365edc;
 }
 
+.contacts__content .list__rayon .list__item-content .list__item-adres .list__item-coord .see__map svg {
+  margin-right: 10px;
+  max-width: 11px;
+  fill: #365edc;
+}
+
 .contacts__content .list__rayon .list__item-content .list__item-adres .list__item-coord .metro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contacts__content .list__rayon .list__item-content .list__item-adres .list__item-coord .metro__svg {
+.contacts__content .list__rayon .list__item-content .list__item-adres .list__item-coord .metro svg {
+  margin-right: 10px;
+  max-width: 11px;
   fill: red;
 }
 
@@ -1922,7 +1933,7 @@ a {
 
 .header .header__max .header__wrapper .menu_block .menu__wrapper .menu-item .menu-item_link i {
   margin-right: 10px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .header .header__max .header__wrapper .menu_block .menu__wrapper .menu-item .menu-item_link:hover {
@@ -4470,7 +4481,7 @@ a {
   right: 0;
   bottom: 0;
   width: 80%;
-  height: 100vh;
+  height: 200vh;
   background: white;
   font-weight: 700;
   -webkit-transform: translateY(-100%);
